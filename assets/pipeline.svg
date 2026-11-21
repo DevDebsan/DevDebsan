@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="1200" height="230" role="img" aria-label="Video analytics pipeline: camera and RTSP, decode with GStreamer or FFmpeg, GPU detection, tracking and Re-ID, analytics, deployed to Android or edge">
+  <style>
+    .t{font:600 17px -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:#f5f5f7}
+    .s{font:13px -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:#a1a1a6}
+    .n{font:700 12px ui-monospace,Menlo,Consolas,monospace;fill:#30d158}
+    .box{fill:#161b26;stroke:#2a3142;stroke-width:1.5}
+    .hot{stroke:#30d158}
+    .flow{fill:none;stroke:#30d158;stroke-width:2.5;stroke-dasharray:6 8;animation:m 1.2s linear infinite}
+    @keyframes m{to{stroke-dashoffset:-14}}
+    .pulse{animation:p 3.6s ease-in-out infinite}
+    @keyframes p{0%,100%{opacity:.55}50%{opacity:1}}
+  </style>
+  <rect width="1200" height="230" rx="22" fill="#0b0f19"/>
+
+  <g>
+    <rect class="box hot" x="30" y="55" width="160" height="120" rx="14"/>
+    <text class="n" x="48" y="82">01</text>
+    <text class="t" x="48" y="113">Cameras</text>
+    <text class="s" x="48" y="137">RTSP · multi-stream</text>
+    <text class="s" x="48" y="156">phones · edge</text>
+  </g>
+  <path class="flow" d="M190 115H222"/>
+  <g>
+    <rect class="box" x="222" y="55" width="160" height="120" rx="14"/>
+    <text class="n" x="240" y="82">02</text>
+    <text class="t" x="240" y="113">Ingest</text>
+    <text class="s" x="240" y="137">GStreamer · FFmpeg</text>
+    <text class="s" x="240" y="156">low-latency decode</text>
+  </g>
+  <path class="flow" d="M382 115H414"/>
+  <g class="pulse">
+    <rect class="box hot" x="414" y="55" width="160" height="120" rx="14"/>
+    <text class="n" x="432" y="82">03</text>
+    <text class="t" x="432" y="113">Detect</text>
+    <text class="s" x="432" y="137">PyTorch · ONNX</text>
+    <text class="s" x="432" y="156">GPU · quantized</text>
+  </g>
+  <path class="flow" d="M574 115H606"/>
+  <g>
+    <rect class="box" x="606" y="55" width="160" height="120" rx="14"/>
+    <text class="n" x="624" y="82">04</text>
+    <text class="t" x="624" y="113">Track + Re-ID</text>
+    <text class="s" x="624" y="137">multi-object tracking</text>
+    <text class="s" x="624" y="156">cross-camera identity</text>
+  </g>
+  <path class="flow" d="M766 115H798"/>
+  <g>
+    <rect class="box" x="798" y="55" width="160" height="120" rx="14"/>
+    <text class="n" x="816" y="82">05</text>
+    <text class="t" x="816" y="113">Analyse</text>
+    <text class="s" x="816" y="137">counts · dwell time</text>
+    <text class="s" x="816" y="156">heatmaps · alerts</text>
+  </g>
+  <path class="flow" d="M958 115H990"/>
+  <g>
+    <rect class="box hot" x="990" y="55" width="180" height="120" rx="14"/>
+    <text class="n" x="1008" y="82">06</text>
+    <text class="t" x="1008" y="113">Deploy</text>
+    <text class="s" x="1008" y="137">Android · Core ML</text>
+    <text class="s" x="1008" y="156">Jetson · Raspberry Pi</text>
+  </g>
+  <text class="s" x="600" y="28" text-anchor="middle">From live video to product: the pipeline I build and ship</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360" role="img" aria-label="Illustration: a vehicle approaching a gate with its number plate region detected and an entry logged">
+  <style>
+    .tt{font:600 15px -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:#f5f5f7}
+    .ss{font:12px -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:#a1a1a6}
+    .m{font:700 11px ui-monospace,Menlo,Consolas,monospace}
+    .car{animation:d 5s ease-in-out infinite alternate}
+    @keyframes d{to{transform:translateX(70px)}}
+    .blink{animation:bl 1.6s ease-in-out infinite}
+    @keyframes bl{50%{opacity:.35}}
+  </style>
+  <rect width="560" height="360" rx="22" fill="#0b0f19"/>
+  <text class="tt" x="24" y="34">ANPR and gate logging</text>
+  <text class="ss" x="24" y="54">Plate detection · entry and exit log · real-time alerts</text>
+
+  <g transform="translate(24,72)">
+    <rect width="512" height="264" rx="12" fill="#101623" stroke="#2a3142" stroke-width="1.5"/>
+    <rect x="0" y="196" width="512" height="68" fill="#171d2b"/>
+    <path d="M0 230H512" stroke="#2a3142" stroke-width="2" stroke-dasharray="14 12"/>
+    <!-- gate -->
+    <rect x="410" y="110" width="10" height="90" rx="3" fill="#2a3142"/>
+    <rect x="360" y="128" width="60" height="8" rx="3" fill="#ff9f0a"/>
+    <!-- car -->
+    <g class="car">
+      <path d="M70 186c0-18 8-28 26-32l26-22c8-7 18-10 30-10h50c14 0 24 4 32 12l22 20c14 3 22 12 22 32v8H70z" fill="#222a3b" stroke="#3a4358" stroke-width="2"/>
+      <circle cx="120" cy="196" r="17" fill="#0b0f19" stroke="#3a4358" stroke-width="3"/>
+      <circle cx="238" cy="196" r="17" fill="#0b0f19" stroke="#3a4358" stroke-width="3"/>
+      <!-- plate detection -->
+      <rect x="260" y="168" width="44" height="18" rx="3" fill="#e8e8ea"/>
+      <rect x="254" y="162" width="56" height="30" rx="4" fill="none" stroke="#30d158" stroke-width="2.5" class="blink"/>
+      <rect x="254" y="144" width="56" height="16" rx="4" fill="#30d158"/>
+      <text class="m" x="282" y="156" text-anchor="middle" fill="#000">plate</text>
+    </g>
+    <!-- log -->
+    <rect x="24" y="24" width="190" height="62" rx="10" fill="#161b26" stroke="#2a3142" stroke-width="1.5"/>
+    <circle cx="44" cy="46" r="5" fill="#30d158" class="blink"/>
+    <text class="m" x="58" y="50" fill="#f5f5f7">ENTRY LOGGED</text>
+    <text class="ss" x="44" y="72">time-stamped · searchable</text>
+  </g>
+</svg>
